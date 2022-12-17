@@ -18,7 +18,7 @@ const fileFilter = (_: Request, file: any, callback: any) => {
   if (file.mimetype === "file/csv" || "file/xlsx") {
     callback(null, true);
   } else {
-    callback(new Error("The photo must be a xlsx or csv"), false);
+    callback(new Error("The file must be a xlsx or csv"), false);
   }
 };
 
